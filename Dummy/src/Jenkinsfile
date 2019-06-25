@@ -1,11 +1,10 @@
 pipeline {
     agent any
-
     stages {  
         stage ("build") {
             
             steps {
-                sh 'java -version'
+               echo 'Building anotherJob and getting the log'
             }
         }          
    }}
