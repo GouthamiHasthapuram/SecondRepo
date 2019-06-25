@@ -4,7 +4,7 @@ pipeline {
     stages {  
         stage ("build") {
             tools {
-               jdk "jdk-1.8.0_211"
+               jdk "jdk 8"
                
             }
             steps {
