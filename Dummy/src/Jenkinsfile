@@ -1,11 +1,13 @@
-Jenkinsfile (Declarative Pipeline)
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'mvn --version'
+    agent any
+
+    stages {  
+        stage ("build") {
+            tools {
+               jdk "jdk-1.8.0_211"
             }
-        }
-    }
-}
+            steps {
+                sh 'java -version'
+            }
+        }          
+   }}
