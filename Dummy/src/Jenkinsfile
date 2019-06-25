@@ -5,6 +5,7 @@ pipeline {
         stage ("build") {
             tools {
                jdk "jdk-1.8.0_211"
+               
             }
             steps {
                 sh 'java -version'
