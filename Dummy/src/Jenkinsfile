@@ -3,10 +3,7 @@ pipeline {
 
     stages {  
         stage ("build") {
-            tools {
-               jdk "jdk 8"
-               
-            }
+            
             steps {
                 sh 'java -version'
             }
